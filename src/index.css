@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 190 90% 50%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 190 90% 50%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 190 90% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio colors */
+    --neon-cyan: 190 90% 50%;
+    --neon-blue: 220 90% 60%;
+    --dark-bg: 0 0% 5%;
+    --dark-secondary: 0 0% 7%;
+    --dark-tertiary: 0 0% 10%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(190 90% 50% / 0.2), hsl(220 90% 60% / 0.2));
+    --gradient-glow: radial-gradient(circle at center, hsl(190 90% 50% / 0.15), transparent 70%);
+
+    /* Shadows */
+    --shadow-neon: 0 0 20px hsl(190 90% 50% / 0.3);
+    --shadow-glow: 0 10px 40px hsl(190 90% 50% / 0.2);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.5);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
