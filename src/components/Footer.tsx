@@ -10,10 +10,6 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © {currentYear} Rizki. All rights reserved.
           </p>
-          <p className="text-muted-foreground text-sm flex items-center gap-2">
-            Built with <Heart className="w-4 h-4 text-primary fill-primary" />{" "}
-            using React & Tailwind
-          </p>
         </div>
       </div>
     </footer>
